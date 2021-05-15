@@ -17,6 +17,29 @@
 
 </head>
 
+   <!-- navigatoion bar -->
+<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+    <div class="container">
+
+    <!-- botton -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+            <!-- bar -->
+       <a class="navbar-brand" href="index.html">Ristorante Con Fusion</a>
+       <!-- hide the nav bar for small screen  -->
+       <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="./aboutus.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>            
+    </div>
+</nav>
+
+
 <body>
 
     <header class="jumbotron">
@@ -38,7 +61,12 @@
 
 
     <div class = "container">
-        <div class = "row about-us align-items-center">
+        <div class = "row">
+            <ol class = "col-12 breadcrumb">
+                <li class = "breadcrumb-item"><a class = "breadcrumb-item" href ="index.html">Home</a></li>
+                <li class = "breadcrumb-item active"><a>About</a></li>
+            </ol>
+
             <div class =  "col-12 col-sm-4 order-sm-11 col-md-3">
                <h3>About Us</h3>
                <!-- <hr> -->

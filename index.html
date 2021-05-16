@@ -52,14 +52,22 @@
     <header class = "jumbotron">
         <div class="container">
             <div class = "row row-header">
-                <div class = "col-12 col-sm-6">
-                    <h1>DUANLIANDA</h1>
-                    <p>ln387408@dal.ca</p>
-                    <a href="https://www.linkedin.com/in/lianda-duan-8690a0135/">Linkin</a>
+                <div class = "col-12 col-sm-7">
+                    <h1>Ristorante con Fusion</h1>
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class = "col-12 col-sm">
-                    <!-- to display the emoty to the right of the titile -->
-                <!-- empty space -->
+                <div class="col-12 col-sm-3 align-self-center ">
+                    <img src="img/logo.png" class="img-fluid">
+                </div>
+
+                <div class="col-12 col-sm-2  align-self-center">
+                    <a href="#bookcard">
+                    <div class = "">
+                            <button type="button" class = "btn btn-warning btn-md btn-block" href="#bookcard">
+                            Reserve Table   
+                            </button>
+                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -81,7 +89,10 @@
                     <img class="d-flex mr-3 img-thumbnail align-self-center"
                             src="img/uthappizza.png" alt="Uthappizza">
                     <div class="media-body">
-                        <h2 class="mt-0">Uthappizza</h2>
+                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span>
+                            <span class="badge badge-pill badge-secondary">$4.99</span>
+                        </h2>
+                       
                         <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
                             Italian pizza, topped with Cerignola olives, ripe vine
                             cherry tomatoes, Vidalia onion, Guntur chillies and
@@ -90,19 +101,32 @@
                 </div>
             </div>
         </div>
-        <!-- 2 -->
-
+        <!-- 111111 -->
         <div class = "row row-content align-items-center">
             <!-- next available stack/ remaining 12-4=8 col/ next remaining 12-3=9 -->
-            <div  class = "col-12 col-sm-4 col-md-3">
-                <h3>This Month's Promotions</h3>
+            <!-- order-sm-X smaller X will be to the left, while larger to the right.-->
+                <div class = "col-12 col-sm-4 order-sm-first col-md-3">
+                        <h3>This Month's Promotions</h3>
+                </div>
+    <!-- media box -->
+    
+    
+             <!-- next available stack/ remaining 12-4=8 col/ next remaining 12-3=9 -->
+                <div class = "col col-sm order-sm-2 col-md ">
+                    <div class="media">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center  order-sm-last"
+                                src="img/buffet.png" alt="Uthappizza">
+                        <div class="media-body">
+                            <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span>
+                                <!-- <span class="badge badge-pill badge-secondary">$4.99</span> -->
+                            </h2>
+                           
+                            <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- next available stack/ remaining 12-4=8 col/ next remaining 12-3=9 -->
-            <div class = "col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
-            </div>
-        </div>
+        <!-- 2 -->
         <!-- 3 -->
         <div class = "row row-content">
             <!-- next available stack/ remaining 12-4=8 col/ next remaining 12-3=9 -->
@@ -127,6 +151,126 @@
                  </div>
         </div>
     </div>
+
+<a id="bookcard"></a>
+    <div class = "row row-content align-center">
+   <div class = 'col-md-2 col-2'></div>   
+        <!-- card -->
+    
+    <div class="col-12 col-sm-8">
+        <div class="card">
+            <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+            <div class="card-body">
+                <!-- row -1 -->
+                <div class="col-12 form-group row">
+                    <div class = "col-12 col-md-2"><strong>Number of Guest</strong></div>
+                    <!-- round -->
+                    <div class = "form-group row col-12 col-md-10">
+                        <div class = "col-2  col-md-1">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input"
+                                name = "approve" id = "approve" value = "">
+                                <label class="form-check-label" for="approve">
+                                    <strong>1</strong>
+                                </label>
+                            </div>
+                        </div>
+                        <div class = "col-2 col-md-1">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input"
+                                name = "approve" id = "approve" value = "">
+                                <label class="form-check-label" for="approve">
+                                    <strong>2</strong>
+                                </label>
+                            </div>
+                        </div>
+                        <div class = "col-2 col-md-1">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input"
+                                name = "approve" id = "approve" value = "">
+                                <label class="form-check-label" for="approve">
+                                    <strong>3</strong>
+                                </label>
+                            </div>
+                        </div>
+                        <div class = "col-2 col-md-1">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input"
+                                name = "approve" id = "approve" value = "">
+                                <label class="form-check-label" for="approve">
+                                    <strong>4</strong>
+                                </label>
+                            </div>
+                        </div>
+                        <div class = "col-2 col-md-1">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input"
+                                name = "approve" id = "approve" value = "">
+                                <label class="form-check-label" for="approve">
+                                    <strong>5</strong>
+                                </label>
+                            </div>
+                        </div>
+                        <div class = "col-2 col-md-1">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input"
+                                name = "approve" id = "approve" value = "">
+                                <label class="form-check-label" for="approve">
+                                    <strong>6</strong>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <!-- row 2 -->
+                <div class="form-group row">
+                    <div class = "col-12 col-md-2"><strong>Date and Time</strong></div>
+                    <div class = "col-12 col-md-3">
+                        <input type = "tel" class = "form-control" id="date" placeholder="Date">
+                    </div>
+                    <div class = "col-12 col-md-3">
+                        <input type = "tel" class = "form-control" id="time" placeholder="Time">
+                    </div>
+
+                </div>
+               <!-- row 3 -->
+               <div class = "form-group row">
+                <div class = "offset-md-2 col-md-10">
+                    <button type="submit" class = "btn btn-primary ">
+                    Reserve
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- another card takes the full width -->
+    <div class="col-12">
+        <div class = "card card-body bg-light">
+            <blockquote class="balockquote">
+                <p class = "mb-0">You better cut the pizza in four pirces 
+                    becauese I'm not hungry enough
+                </p>
+                <footer class="blockquote-footer">Yogi Beera,
+                    <!-- add citation -->
+                    <cite title="source Title">
+                        XXX books,2014
+                    </cite>
+                </footer>
+            </blockquote>
+        </div>
+    </div>
+
+        <div>
+            
+        </div>
+
+        
+    </div>
+
 
     <footer class = "footer">
         <div class = "container">

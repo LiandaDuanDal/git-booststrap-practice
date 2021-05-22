@@ -146,6 +146,8 @@
 <div class="row row-content">
     <div class="col">
         <div id="mycarousel" class="carousel slide" data-ride="carousel">
+
+
             <div class="carousel-inner" role="listbox">
                 <!-- active 表示渲染的时候默认显示的第一个元素 -->
                 <div class="carousel-item active">
@@ -179,15 +181,35 @@
                 <li data-target="#mycarousel" data-slide-to="1"></li>
                 <li data-target="#mycarousel" data-slide-to="2"></li>
             </ol>
-        </div>
+
+         
         
-        <!-- 添加左右切换按钮 -->
-        <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
+    
+    
+        
+                <!-- 添加左右切换按钮 -->
+                <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+
+                <!-- add botton to the carousel -->
+                <div class="btn-group" id="carouselButton">
+                    <button class="btn btn-danger btn-sm" id="carousel-pause">
+                        <span class="fa fa-pause"></span>
+                    </button>
+                    <button class="btn btn-danger btn-sm" id="carousel-play">
+                        <span class="fa fa-play"></span>
+                    </button>
+                </div>
+
+
+         </div>
+
+
      </div>
 </div>
 
@@ -365,7 +387,7 @@
                     
 
                 </div>
-
+     
                 <!-- row 2 -->
                 <div class="col-12 form-group row">
                     <div class = "col-12 col-md-2"><strong>Date and Time</strong></div>
@@ -471,11 +493,19 @@
  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
- <script>
-    // $(document).ready(function(){
-    //     $('[data-toggle="tooltip"]').tooltip();
-    // });
+<script>
+    $(document).ready(function(){
+        $("#mycarousel").carousel( { interval: 200} );
+        $("#carousel-pause").click(function(){
+            // alert("pause!!");
+            $("#mycarousel").carousel('pause');
+        });
+        $("#carousel-play").click(function(){
+            $("#mycarousel").carousel('cycle');
+        });
+    });
 </script>
+
 </body>
 
 </html>

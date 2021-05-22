@@ -7,14 +7,44 @@ $background-pale: #D1C4E9;
 // Height variables
 $carousel-item-height: 300px;
 
+// btn-close
+$btn-close-color:florawhite;
+
 // 定义一个函数 
 // 可以在class调用对局部的class内部属性进行赋值
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
 	margin:0px auto;
 	padding: $pad-up-dn $pad-left-right;
 }
+// 
+// .window-title{
+//     background-color:$background-dark;
+//     color: floralwhite;
+//     // btn-close-color: flo
+//     // @extend .btn-close-white;
+    
+// }
+// .windwow-content{
+//     background-color:$background-pale;
+// }
 
 
+//
+.modal-header{
+    background-color:$background-dark;
+    color: floralwhite;
+
+}
+.modal-body{
+    background-color:$background-pale;
+}
+
+.close{
+    color: floralwhite;
+}
+
+// 
+// 
 .row-header{
     @include zero-margin(0px,0px);
 }
@@ -84,3 +114,6 @@ body{
 // npm install --save-dev node-sass@4.7.2
 // report error so use 
 // // npm install --save-dev node-sass@6.0 instead
+
+// usage:
+// npm run scss

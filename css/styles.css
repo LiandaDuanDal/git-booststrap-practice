@@ -1,9 +1,9 @@
 .modal-header {
-  background-color: #512DA8;
+  background-color: #31a82d;
   color: floralwhite; }
 
 .modal-body {
-  background-color: #D1C4E9; }
+  background-color: #e9d3c4; }
 
 .close {
   color: floralwhite; }
@@ -19,14 +19,14 @@
   min-height: 400px; }
 
 .footer {
-  background-color: #D1C4E9;
+  background-color: #e9d3c4;
   margin: 0px auto;
   padding: 20px 0px; }
 
 .jumbotron {
   margin: 0px auto;
   padding: 70px 30px;
-  background: #9575CD;
+  background: #c7cd75;
   color: floralwhite; }
 
 address {
@@ -39,7 +39,7 @@ body {
   z-index: 0; }
 
 .navbar-dark {
-  background-color: #512DA8; }
+  background-color: #31a82d; }
 
 .tab-content {
   border-left: 1px solid #ddd;
@@ -48,7 +48,7 @@ body {
   padding: 10px; }
 
 .carousel {
-  background: #512DA8; }
+  background: #31a82d; }
   .carousel .carousel-item {
     height: 300px; }
     .carousel .carousel-item img {

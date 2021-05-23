@@ -7,7 +7,7 @@
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <meta http-equiv="x-ua-compatible" content="ie=edge">
- 
+ <!-- build:css css/main.css -->
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
      <!-- font icon -->
@@ -15,6 +15,7 @@
      <link rel="stylesheet" href = "node_modules/bootstrap-social/bootstrap-social.css">
      <!-- personal css -->
      <link rel="stylesheet" href="css/styles.css">
+<!-- endbuild -->
      <title>DUANLIANDA</title>
 </head>
  <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
@@ -500,9 +501,14 @@
 
     
  <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+ <!-- build:js js/main.js -->
  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+<!-- endbuild -->
+
+
 <!-- <script>
     $(document).ready(function(){
         $("#mycarousel").carousel( { interval: 200} );
@@ -515,10 +521,12 @@
         });
     });
 </script> -->
-<script src="js/script.js"></script>
+
+
 </body>
 
 </html>
 
 <!-- problem when the parallelshell raise error and cannot start -->
 <!-- https://stackoverflow.com/questions/53461626/problem-running-parallelshell-nodejs-script/53467253#53467253 -->
+<!-- npm install --save-dev usemin-cli@0.6.0 cssmin@0.4.3 uglifyjs@2.4.11 htmlmin@0.0.7 -->
